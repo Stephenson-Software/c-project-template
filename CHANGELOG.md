@@ -1,0 +1,29 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [Unreleased]
+
+### Added
+
+- README.md with full project documentation
+- CONTRIBUTING.md with contribution guidelines
+- USER_GUIDE.md with getting-started guide
+- COMMANDS.md with build and run commands reference
+- CONFIG.md with configuration guide
+- CHANGELOG.md
+- GitHub Actions CI workflow (`.github/workflows/build.yml`)
+- GitHub Actions release workflow (`.github/workflows/release.yml`)
+- GitHub Copilot instructions (`.github/copilot-instructions.md`)
+
+## [1.0.0] – 2022-11-04
+
+### Added
+
+- Initial C project template with "Hello World" program (`projectTemplate.c`)
+- Compile-and-run script (`cr.sh`)
+- VS Code dev container configuration
+- VS Code editor settings
+- LICENSE (Stephenson Software Non-Commercial License)
