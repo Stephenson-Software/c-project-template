@@ -53,6 +53,28 @@ If you use VS Code, you can develop inside a pre-configured container:
 
 ### Customising the Template
 
-- Rename `projectTemplate.c` to match your project name.
-- Update the `cr.sh` script to reflect the new file name.
 - Modify the code in the `main()` function to begin building your application.
+
+#### Renaming the Source File
+
+Renaming `projectTemplate.c` also changes the name of the compiled output, and nine files hardcode one or both of those names. Update all of them in the same commit, or the build, the ignore rule, or CI will be left pointing at a file that no longer exists:
+
+| File | What to update |
+|------|----------------|
+| `cr.sh` | The compile and run lines |
+| `.gitignore` | The ignored artifact name, so the new binary is not committed |
+| `.github/workflows/build.yml` | The compile and run steps |
+| `.github/workflows/release.yml` | The compile step and the `files:` upload artifact |
+| `README.md` | The installation step, and the Linux/macOS and Windows testing sections |
+| `CONTRIBUTING.md` | The getting-started compile step, and both testing sections |
+| `COMMANDS.md` | The Compile and Run entries |
+| `CONFIG.md` | The quoted `cr.sh` compile command |
+| `.github/copilot-instructions.md` | The Project Structure entry |
+
+Two of these are worth special attention. `.gitignore` ignores exactly one name, so until it is updated the newly named binary is untracked and unignored, and the next `git add -A` commits a compiled binary. `.github/workflows/release.yml` only runs when a release is created, so a mismatch there is not discovered until a release is cut.
+
+Afterwards, recompile and run to confirm the rename is complete:
+
+```bash
+./cr.sh
+```
