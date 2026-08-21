@@ -57,11 +57,12 @@ If you use VS Code, you can develop inside a pre-configured container:
 
 #### Renaming the Source File
 
-Renaming `projectTemplate.c` also changes the name of the compiled output, and nine files hardcode one or both of those names. Update all of them in the same commit, or the build, the ignore rule, or CI will be left pointing at a file that no longer exists:
+Renaming `projectTemplate.c` also changes the name of the compiled output, and ten files hardcode one or both of those names. Update all of them in the same commit, or the build, the ignore rule, or CI will be left pointing at a file that no longer exists:
 
 | File | What to update |
 |------|----------------|
 | `cr.sh` | The compile and run lines |
+| `USER_GUIDE.md` | The compile and run commands in "Compiling and Running" above |
 | `.gitignore` | The ignored artifact name, so the new binary is not committed |
 | `.github/workflows/build.yml` | The compile and run steps |
 | `.github/workflows/release.yml` | The compile step and the `files:` upload artifact |
