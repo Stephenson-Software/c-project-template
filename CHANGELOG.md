@@ -18,6 +18,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - GitHub Actions release workflow (`.github/workflows/release.yml`)
 - GitHub Copilot instructions (`.github/copilot-instructions.md`)
 
+### Changed
+
+- USER_GUIDE.md now lists every file that must be updated when the source file is renamed, rather than naming only `cr.sh`
+- CONFIG.md now documents all three files in `.vscode/` — `settings.json`, `c_cpp_properties.json`, and `launch.json` — instead of mentioning `settings.json` alone
+
 ## [1.0.0] – 2022-11-04
 
 ### Added
