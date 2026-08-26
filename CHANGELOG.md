@@ -22,6 +22,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - USER_GUIDE.md now lists every file that must be updated when the source file is renamed, rather than naming only `cr.sh`
 - CONFIG.md now documents all three files in `.vscode/` — `settings.json`, `c_cpp_properties.json`, and `launch.json` — instead of mentioning `settings.json` alone
+- The CI workflow now asserts that the compiled program prints `Hello World!`, rather than checking only its exit status
+- USER_GUIDE.md now explains that changing the program's output requires updating the CI assertion
 
 ## [1.0.0] – 2022-11-04
 
