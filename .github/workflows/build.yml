@@ -19,5 +19,14 @@ jobs:
       - name: Compile with gcc
         run: gcc projectTemplate.c -o projectTemplate.exe
 
-      - name: Run
-        run: ./projectTemplate.exe
+      - name: Run and assert output
+        # Keep the expected value in step with the output documented in
+        # README.md and USER_GUIDE.md, and with the printf in projectTemplate.c.
+        run: |
+          expected='Hello World!'
+          actual=$(./projectTemplate.exe)
+          echo "$actual"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error::Expected '$expected' but the program printed '$actual'"
+            exit 1
+          fi

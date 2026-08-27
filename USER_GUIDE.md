@@ -55,6 +55,10 @@ If you use VS Code, you can develop inside a pre-configured container:
 
 - Modify the code in the `main()` function to begin building your application.
 
+#### Changing the Program's Output
+
+`.github/workflows/build.yml` asserts that the compiled program prints exactly `Hello World!`, so that a program which compiles but prints nothing cannot pass CI. Once you change what `main()` prints, update the `expected` value in that workflow's "Run and assert output" step to match — or replace the assertion with one that suits your own program — otherwise CI will fail on the new output. `README.md` and the "Compiling and Running" section above also quote `Hello World!`.
+
 #### Renaming the Source File
 
 Renaming `projectTemplate.c` also changes the name of the compiled output, and ten files hardcode one or both of those names. Update all of them in the same commit, or the build, the ignore rule, or CI will be left pointing at a file that no longer exists:
