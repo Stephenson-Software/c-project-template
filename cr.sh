@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # compile
 gcc projectTemplate.c -o projectTemplate.exe
 
