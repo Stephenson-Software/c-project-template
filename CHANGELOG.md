@@ -25,6 +25,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - The CI workflow now asserts that the compiled program prints `Hello World!`, rather than checking only its exit status
 - USER_GUIDE.md now explains that changing the program's output requires updating the CI assertion
 
+### Fixed
+
+- `cr.sh` is now tracked as executable and carries a `#!/bin/sh` shebang, so the `./cr.sh` invocation documented in README.md, USER_GUIDE.md, COMMANDS.md, and CONTRIBUTING.md no longer fails with `Permission denied` on a fresh clone
+
 ## [1.0.0] – 2022-11-04
 
 ### Added
