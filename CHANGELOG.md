@@ -28,6 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - `cr.sh` is now tracked as executable and carries a `#!/bin/sh` shebang, so the `./cr.sh` invocation documented in README.md, USER_GUIDE.md, COMMANDS.md, and CONTRIBUTING.md no longer fails with `Permission denied` on a fresh clone
+- `cr.sh` now stops with a non-zero exit status when compilation fails, instead of running a stale `projectTemplate.exe` from a previous build and exiting `0`
 
 ## [1.0.0] – 2022-11-04
 
