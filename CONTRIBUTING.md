@@ -72,4 +72,4 @@ You can also use the provided compile-and-run script:
 
 ## Questions
 
-Open a GitHub Discussion or issue in this repository.
+Open a [GitHub issue](https://github.com/Stephenson-Software/c-project-template/issues/new) in this repository.
