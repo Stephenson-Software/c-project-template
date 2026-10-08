@@ -30,10 +30,6 @@ Thank you for your interest in contributing to C Project Template! This guide wi
 
 Work items are tracked as [GitHub issues](https://github.com/Stephenson-Software/c-project-template/issues).
 
-### Milestones
-
-Issues are grouped into [milestones](https://github.com/Stephenson-Software/c-project-template/milestones) representing upcoming releases.
-
 ## Making Changes
 
 1. Make sure an issue exists for the work. If not, create one.
