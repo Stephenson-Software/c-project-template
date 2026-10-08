@@ -31,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `cr.sh` now stops with a non-zero exit status when compilation fails, instead of running a stale `projectTemplate.exe` from a previous build and exiting `0`
 - CONTRIBUTING.md and `.github/workflows/build.yml` now refer to `main`, the repository's default branch, instead of a `develop` branch that does not exist, so `git checkout develop` no longer fails for contributors following the guide
 - CONTRIBUTING.md's Questions section now points to GitHub issues only, instead of GitHub Discussions, which are not enabled for this repository
+- CONTRIBUTING.md no longer says issues are grouped into milestones representing upcoming releases; the repository has no milestones, and no issue has been assigned one
 
 ## [1.0.0] – 2022-11-04
 
