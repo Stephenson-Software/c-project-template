@@ -6,6 +6,12 @@ This project is a minimal C project template. It does not have a runtime configu
 
 The dev container is configured in `.devcontainer/devcontainer.json`.
 
+### name
+
+**Type:** string
+**Default:** `"Ubuntu"`
+**Description:** The display name VS Code shows for the dev container.
+
 ### image
 
 **Type:** string
@@ -110,6 +116,6 @@ gcc projectTemplate.c -o projectTemplate.exe
 
 You can customise compiler flags by editing `cr.sh` or passing additional arguments to `gcc` directly. Common options include:
 
-- `-Wall` – Enable all warnings
+- `-Wall` – Enable the most common warnings (despite its name, not all of them; `-Wextra` and `-Wpedantic` add more)
 - `-g` – Include debug information
 - `-O2` – Optimise for performance

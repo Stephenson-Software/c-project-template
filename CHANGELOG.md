@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - CONFIG.md now documents all three files in `.vscode/` — `settings.json`, `c_cpp_properties.json`, and `launch.json` — instead of mentioning `settings.json` alone
 - The CI workflow now asserts that the compiled program prints `Hello World!`, rather than checking only its exit status
 - USER_GUIDE.md now explains that changing the program's output requires updating the CI assertion
+- CONFIG.md now documents the `name` key of `.devcontainer/devcontainer.json`, the only top-level key it previously omitted
 
 ### Fixed
 
@@ -32,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - CONTRIBUTING.md and `.github/workflows/build.yml` now refer to `main`, the repository's default branch, instead of a `develop` branch that does not exist, so `git checkout develop` no longer fails for contributors following the guide
 - CONTRIBUTING.md's Questions section now points to GitHub issues only, instead of GitHub Discussions, which are not enabled for this repository
 - CONTRIBUTING.md no longer says issues are grouped into milestones representing upcoming releases; the repository has no milestones, and no issue has been assigned one
+- CONFIG.md no longer describes `-Wall` as enabling all warnings; it enables the most common ones, and `-Wextra` and `-Wpedantic` add more
 
 ## [1.0.0] – 2022-11-04
 
