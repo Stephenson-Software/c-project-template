@@ -33,5 +33,5 @@ jobs:
 
       - name: Run cr.sh
         # Invoked as ./cr.sh, as the docs instruct, so a lost executable bit
-        # or shebang fails here rather than on a contributor's fresh clone.
+        # fails here rather than on a contributor's fresh clone.
         run: ./cr.sh
