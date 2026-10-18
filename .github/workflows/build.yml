@@ -30,3 +30,8 @@ jobs:
             echo "::error::Expected '$expected' but the program printed '$actual'"
             exit 1
           fi
+
+      - name: Run cr.sh
+        # Invoked as ./cr.sh, as the docs instruct, so a lost executable bit
+        # fails here rather than on a contributor's fresh clone.
+        run: ./cr.sh
