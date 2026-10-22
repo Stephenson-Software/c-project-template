@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - GitHub Actions CI workflow (`.github/workflows/build.yml`)
 - GitHub Actions release workflow (`.github/workflows/release.yml`)
 - GitHub Copilot instructions (`.github/copilot-instructions.md`)
+- LICENSE (Stephenson Software Non-Commercial License)
 
 ### Changed
 
@@ -44,4 +45,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Compile-and-run script (`cr.sh`)
 - VS Code dev container configuration
 - VS Code editor settings
-- LICENSE (Stephenson Software Non-Commercial License)
