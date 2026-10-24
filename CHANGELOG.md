@@ -27,6 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - USER_GUIDE.md now explains that changing the program's output requires updating the CI assertion
 - CONFIG.md now documents the `name` key of `.devcontainer/devcontainer.json`, the only top-level key it previously omitted
 - The CI workflow now runs `./cr.sh` as documented, so a `cr.sh` that is not executable or exits non-zero fails the build
+- README.md's Documentation list now links CHANGELOG.md alongside the user, commands, and configuration guides
 
 ### Fixed
 

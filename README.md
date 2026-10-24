@@ -27,6 +27,7 @@ C Project Template is a minimal template for starting new C projects. It provide
 - [User Guide](USER_GUIDE.md) – Getting started and common scenarios
 - [Commands Reference](COMMANDS.md) – Build and run commands
 - [Configuration Guide](CONFIG.md) – Project configuration options
+- [Changelog](CHANGELOG.md) – Notable changes by release
 
 ## Support
 
