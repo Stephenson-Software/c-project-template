@@ -66,6 +66,8 @@ You can also use the provided compile-and-run script:
 ./cr.sh
 ```
 
+`cr.sh` is a POSIX shell script, so on Windows it must be run from a POSIX shell such as Git Bash or WSL.
+
 ## Questions
 
 Open a [GitHub issue](https://github.com/Stephenson-Software/c-project-template/issues/new) in this repository.

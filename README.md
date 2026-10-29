@@ -82,6 +82,8 @@ Use the provided `cr.sh` script to compile and run in one step:
 ./cr.sh
 ```
 
+`cr.sh` is a POSIX shell script (`#!/bin/sh`). It works on Linux, macOS, and inside the dev container; on Windows, run it from a POSIX shell such as Git Bash or WSL, or use the Windows commands under [Building and Running](#building-and-running) instead.
+
 ## Authors and Acknowledgement
 
 ### Developers
