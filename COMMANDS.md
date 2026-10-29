@@ -26,4 +26,4 @@ gcc projectTemplate.c -o projectTemplate.exe
 ./cr.sh
 ```
 
-**Description:** Compiles and runs the project in one step using the provided script.
+**Description:** Compiles and runs the project in one step using the provided script. `cr.sh` is a POSIX shell script; on Windows, run it from a POSIX shell such as Git Bash or WSL.

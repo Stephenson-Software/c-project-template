@@ -43,6 +43,8 @@ A convenience script (`cr.sh`) is provided that compiles and runs the project in
 ./cr.sh
 ```
 
+`cr.sh` is a POSIX shell script (`#!/bin/sh`). On Windows, run it from a POSIX shell such as Git Bash or WSL, or compile and run with the commands above.
+
 ### Using the Dev Container
 
 If you use VS Code, you can develop inside a pre-configured container:
