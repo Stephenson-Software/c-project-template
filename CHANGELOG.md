@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - CONTRIBUTING.md's Questions section now points to GitHub issues only, instead of GitHub Discussions, which are not enabled for this repository
 - CONTRIBUTING.md no longer says issues are grouped into milestones representing upcoming releases; the repository has no milestones, and no issue has been assigned one
 - CONFIG.md no longer describes `-Wall` as enabling all warnings; it enables the most common ones, and `-Wextra` and `-Wpedantic` add more
+- README.md's Installation steps, USER_GUIDE.md, and COMMANDS.md now give the Windows `cmd` form of the run command, `projectTemplate.exe`, so USER_GUIDE.md's advice to use "the commands above" on Windows no longer leads to `./projectTemplate.exe`, which `cmd` does not accept
 
 ## [1.0.0] – 2022-11-04
 

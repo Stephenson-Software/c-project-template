@@ -29,6 +29,8 @@ Run the compiled program:
 ./projectTemplate.exe
 ```
 
+In the Windows `cmd` shell, run `projectTemplate.exe` instead, without the leading `./`.
+
 You should see the following output:
 
 ```

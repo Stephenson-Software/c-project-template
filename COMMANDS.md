@@ -18,7 +18,7 @@ gcc projectTemplate.c -o projectTemplate.exe
 ./projectTemplate.exe
 ```
 
-**Description:** Runs the compiled executable.
+**Description:** Runs the compiled executable. In the Windows `cmd` shell, run `projectTemplate.exe` instead, without the leading `./`.
 
 ### Compile and Run
 
