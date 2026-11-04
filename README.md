@@ -19,6 +19,7 @@ C Project Template is a minimal template for starting new C projects. It provide
    ```
    ./projectTemplate.exe
    ```
+   In the Windows `cmd` shell, run `projectTemplate.exe` instead, without the leading `./`.
 
 ## Usage
 
