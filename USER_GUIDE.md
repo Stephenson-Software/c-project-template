@@ -11,13 +11,17 @@
    ```
    git clone https://github.com/Stephenson-Software/c-project-template.git
    ```
-2. Open the project in your editor or IDE.
+2. Change into the cloned directory. If you created a new repository from the template, clone that repository first and use its name here:
+   ```
+   cd c-project-template
+   ```
+3. Open the project in your editor or IDE.
 
 ## Common Scenarios
 
 ### Compiling and Running
 
-Compile the project with `gcc`:
+Run these commands from the repository root, where `projectTemplate.c` is. Compile the project with `gcc`:
 
 ```bash
 gcc projectTemplate.c -o projectTemplate.exe
