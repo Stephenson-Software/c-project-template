@@ -10,12 +10,16 @@ C Project Template is a minimal template for starting new C projects. It provide
    ```
    git clone https://github.com/Stephenson-Software/c-project-template.git
    ```
-2. Ensure you have `gcc` installed on your system.
-3. Compile the project:
+2. Change into the cloned directory. If you created a new repository from the template, clone that repository first and use its name here:
+   ```
+   cd c-project-template
+   ```
+3. Ensure you have `gcc` installed on your system.
+4. Compile the project:
    ```
    gcc projectTemplate.c -o projectTemplate.exe
    ```
-4. Run the compiled program:
+5. Run the compiled program:
    ```
    ./projectTemplate.exe
    ```

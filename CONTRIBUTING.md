@@ -20,8 +20,9 @@ Thank you for your interest in contributing to C Project Template! This guide wi
 1. [Sign up for GitHub](https://github.com/signup) if you don't have an account.
 2. Fork the repository by clicking **Fork** at the top right of the repo page.
 3. Clone your fork: `git clone https://github.com/<your-username>/c-project-template.git`
-4. Open the project in your editor or IDE.
-5. Compile the project: `gcc projectTemplate.c -o projectTemplate.exe`
+4. Change into the cloned directory: `cd c-project-template`
+5. Open the project in your editor or IDE.
+6. Compile the project: `gcc projectTemplate.c -o projectTemplate.exe`
    If you encounter errors, please open an issue.
 
 ## Identifying What to Work On
