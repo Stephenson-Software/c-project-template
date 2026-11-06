@@ -40,6 +40,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - CONFIG.md no longer describes `-Wall` as enabling all warnings; it enables the most common ones, and `-Wextra` and `-Wpedantic` add more
 - README.md's Installation steps, USER_GUIDE.md, and COMMANDS.md now give the Windows `cmd` form of the run command, `projectTemplate.exe`, so USER_GUIDE.md's advice to use "the commands above" on Windows no longer leads to `./projectTemplate.exe`, which `cmd` does not accept
 - README.md, USER_GUIDE.md, and CONTRIBUTING.md now include the `cd c-project-template` step after cloning, so the documented compile command no longer fails with `No such file or directory` when run straight after `git clone`
+- CONFIG.md now states that a compiler flag added to `cr.sh` does not reach `.github/workflows/build.yml` or `.github/workflows/release.yml`, so a flag the program needs in order to build must be added there too, instead of implying that editing `cr.sh` is sufficient
 
 ## [1.0.0] – 2022-11-04
 

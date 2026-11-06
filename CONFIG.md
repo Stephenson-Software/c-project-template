@@ -119,3 +119,5 @@ You can customise compiler flags by editing `cr.sh` or passing additional argume
 - `-Wall` – Enable the most common warnings (despite its name, not all of them; `-Wextra` and `-Wpedantic` add more)
 - `-g` – Include debug information
 - `-O2` – Optimise for performance
+
+Editing `cr.sh` changes only what `cr.sh` runs. `.github/workflows/build.yml` and `.github/workflows/release.yml` each have their own `gcc` line and do not read `cr.sh`, so a flag the program needs in order to build, such as `-lm` for the math library, must be added to both workflows as well. Otherwise `./cr.sh` succeeds locally while the `Compile with gcc` step fails in CI.
