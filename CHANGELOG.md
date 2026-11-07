@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - README.md's Documentation list now links CHANGELOG.md alongside the user, commands, and configuration guides
 - README.md, USER_GUIDE.md, COMMANDS.md, and CONTRIBUTING.md now state that `cr.sh` is a POSIX shell script that needs Git Bash, WSL, or a similar shell on Windows, rather than offering `./cr.sh` directly after the Windows `cmd` instructions with no caveat
 - USER_GUIDE.md now explains that a new `.c` file must be added to the `gcc` line in `cr.sh` and both workflows
-- CONTRIBUTING.md's Testing section now states the expected `Hello World!` output and that CI asserts it
+- CONTRIBUTING.md's Testing section now links the expected output and states that CI asserts it
 
 ### Fixed
 

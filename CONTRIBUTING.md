@@ -69,7 +69,7 @@ You can also use the provided compile-and-run script:
 
 `cr.sh` is a POSIX shell script, so on Windows it must be run from a POSIX shell such as Git Bash or WSL.
 
-The program should print `Hello World!`. CI fails on any other output, so a change to what it prints must also update the assertion described in the [User Guide](USER_GUIDE.md#changing-the-programs-output).
+The program should print the output shown in the [User Guide](USER_GUIDE.md#compiling-and-running). CI fails on any other output, so a change to what it prints must also [update the CI assertion](USER_GUIDE.md#changing-the-programs-output).
 
 ## Questions
 
