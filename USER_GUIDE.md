@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- A C compiler such as `gcc`
+- `gcc` — `cr.sh`, the CI workflows, and the commands below all invoke it by name
 - Git (to clone the repository or use it as a template)
 
 ## First Steps
@@ -78,7 +78,7 @@ Renaming `projectTemplate.c` also changes the name of the compiled output, and t
 | `.gitignore` | The ignored artifact name, so the new binary is not committed |
 | `.github/workflows/build.yml` | The compile and run steps |
 | `.github/workflows/release.yml` | The compile step and the `files:` upload artifact |
-| `README.md` | The installation step, and the Linux/macOS and Windows testing sections |
+| `README.md` | The installation steps, and the Linux/macOS and Windows testing sections |
 | `CONTRIBUTING.md` | The getting-started compile step, and both testing sections |
 | `COMMANDS.md` | The Compile and Run entries |
 | `CONFIG.md` | The quoted `cr.sh` compile command |
@@ -91,3 +91,7 @@ Afterwards, recompile and run to confirm the rename is complete:
 ```bash
 ./cr.sh
 ```
+
+#### Adding Source Files
+
+`gcc` compiles only the files it is given, and `cr.sh`, `.github/workflows/build.yml`, and `.github/workflows/release.yml` each name `projectTemplate.c` on their own `gcc` line. Add a new `.c` file to all three, or the build fails with an `undefined reference` error as soon as `main()` calls a function defined in it. `README.md`, `USER_GUIDE.md`, `CONTRIBUTING.md`, `COMMANDS.md`, and `CONFIG.md` quote the same command, so update those as well.

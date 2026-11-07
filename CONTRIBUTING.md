@@ -12,7 +12,7 @@ Thank you for your interest in contributing to C Project Template! This guide wi
 
 - A GitHub account
 - Git installed on your local machine
-- A C compiler (e.g. `gcc`)
+- `gcc`
 - A text editor or IDE
 
 ## Getting Started
@@ -68,6 +68,8 @@ You can also use the provided compile-and-run script:
 ```
 
 `cr.sh` is a POSIX shell script, so on Windows it must be run from a POSIX shell such as Git Bash or WSL.
+
+The program should print `Hello World!`. CI fails on any other output, so a change to what it prints must also update the assertion described in the [User Guide](USER_GUIDE.md#changing-the-programs-output).
 
 ## Questions
 

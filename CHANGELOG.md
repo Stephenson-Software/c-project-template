@@ -29,6 +29,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - The CI workflow now runs `./cr.sh` as documented, so a `cr.sh` that is not executable or exits non-zero fails the build
 - README.md's Documentation list now links CHANGELOG.md alongside the user, commands, and configuration guides
 - README.md, USER_GUIDE.md, COMMANDS.md, and CONTRIBUTING.md now state that `cr.sh` is a POSIX shell script that needs Git Bash, WSL, or a similar shell on Windows, rather than offering `./cr.sh` directly after the Windows `cmd` instructions with no caveat
+- USER_GUIDE.md now explains that a new `.c` file must be added to the `gcc` line in `cr.sh` and both workflows
+- CONTRIBUTING.md's Testing section now states the expected `Hello World!` output and that CI asserts it
 
 ### Fixed
 
@@ -41,6 +43,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - README.md's Installation steps, USER_GUIDE.md, and COMMANDS.md now give the Windows `cmd` form of the run command, `projectTemplate.exe`, so USER_GUIDE.md's advice to use "the commands above" on Windows no longer leads to `./projectTemplate.exe`, which `cmd` does not accept
 - README.md, USER_GUIDE.md, and CONTRIBUTING.md now include the `cd c-project-template` step after cloning, so the documented compile command no longer fails with `No such file or directory` when run straight after `git clone`
 - CONFIG.md now states that a compiler flag added to `cr.sh` does not reach `.github/workflows/build.yml` or `.github/workflows/release.yml`, so a flag the program needs in order to build must be added there too, instead of implying that editing `cr.sh` is sufficient
+- USER_GUIDE.md and CONTRIBUTING.md now list `gcc` as the requirement, matching README.md, instead of any C compiler; `cr.sh`, the workflows, and every documented command invoke `gcc` by name
 
 ## [1.0.0] – 2022-11-04
 
