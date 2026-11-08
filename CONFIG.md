@@ -48,7 +48,13 @@ Settings for the C/C++ Runner extension — every key is prefixed `C_Cpp_Runner.
 
 **Type:** array of strings
 **Default:** `["-Wall", "-Wextra", "-Wpedantic"]`
-**Description:** Warning flags passed when the extension builds. These apply only to extension-driven builds — neither `cr.sh` nor the CI workflow passes them, so a build run from the command line will not report the same warnings.
+**Description:** Warning flags passed when the extension builds, provided `C_Cpp_Runner.enableWarnings` is `true`. These apply only to extension-driven builds — `cr.sh`, `.github/workflows/build.yml`, and `.github/workflows/release.yml` do not pass them, so a build run from the command line will not report the same warnings.
+
+#### C_Cpp_Runner.enableWarnings
+
+**Type:** boolean
+**Default:** `true`
+**Description:** Whether the extension passes the `C_Cpp_Runner.warnings` flags at all. Set to `false` to build without them.
 
 #### C_Cpp_Runner.warningsAsError
 
