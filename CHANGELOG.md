@@ -31,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - README.md, USER_GUIDE.md, COMMANDS.md, and CONTRIBUTING.md now state that `cr.sh` is a POSIX shell script that needs Git Bash, WSL, or a similar shell on Windows, rather than offering `./cr.sh` directly after the Windows `cmd` instructions with no caveat
 - USER_GUIDE.md now explains that a new `.c` file must be added to the `gcc` line in `cr.sh` and both workflows
 - CONTRIBUTING.md's Testing section now links the expected output and states that CI asserts it
+- CONFIG.md now documents `C_Cpp_Runner.enableWarnings`, the `.vscode/settings.json` key that controls whether the `C_Cpp_Runner.warnings` flags are passed, and states that neither workflow passes those flags, rather than referring to a single CI workflow
 
 ### Fixed
 
