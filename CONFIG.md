@@ -126,4 +126,4 @@ You can customise compiler flags by editing `cr.sh` or passing additional argume
 - `-g` – Include debug information
 - `-O2` – Optimise for performance
 
-Editing `cr.sh` changes only what `cr.sh` runs. `.github/workflows/build.yml` and `.github/workflows/release.yml` each have their own `gcc` line and do not read `cr.sh`, so a flag the program needs in order to build, such as `-lm` for the math library, must be added to both workflows as well. Otherwise `./cr.sh` succeeds locally while the `Compile with gcc` step fails in CI.
+Editing `cr.sh` changes only what `cr.sh` runs. `.github/workflows/build.yml` and `.github/workflows/release.yml` each compile with their own `gcc` line rather than the one in `cr.sh`. `build.yml` does also run `./cr.sh`, but only as its last step, after its own `Compile with gcc` and `Run and assert output` steps; `release.yml` does not run `cr.sh` at all. A flag the program needs in order to build, such as `-lm` for the math library, must therefore be added to both workflows as well. Otherwise `./cr.sh` succeeds locally while the `Compile with gcc` step fails in CI.

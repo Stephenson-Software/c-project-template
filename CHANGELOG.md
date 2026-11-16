@@ -46,6 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - README.md, USER_GUIDE.md, and CONTRIBUTING.md now include the `cd c-project-template` step after cloning, so the documented compile command no longer fails with `No such file or directory` when run straight after `git clone`
 - CONFIG.md now states that a compiler flag added to `cr.sh` does not reach `.github/workflows/build.yml` or `.github/workflows/release.yml`, so a flag the program needs in order to build must be added there too, instead of implying that editing `cr.sh` is sufficient
 - USER_GUIDE.md and CONTRIBUTING.md now list `gcc` as the requirement, matching README.md, instead of any C compiler; `cr.sh`, the workflows, and every documented command invoke `gcc` by name
+- CONFIG.md no longer says that neither workflow reads `cr.sh`; `.github/workflows/build.yml` runs `./cr.sh` as its last step, though it still compiles with its own `gcc` line first, so the advice to add build flags to both workflows is unchanged
 
 ## [1.0.0] – 2022-11-04
 
